@@ -68,17 +68,19 @@ findPositiveNumbers()
 
 // 2)
 
-let newarr = []
+
 function findPositiveNumbers() {
-    let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
+    let newarr = [];
+    let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0];
     for (let item of arr) {
         if (item > 0) {
             newarr.push (item)
         }
     }
+    console.log(newarr)
 }
 findPositiveNumbers()
-console.log(newarr)
+
 
 // 3)
 
@@ -157,14 +159,10 @@ filterFor(arr, 4)
 function getRandomInteger(min, max) {
 return Math.floor(Math.random() * (max - min)) + min;
 }
-let rgb = [];
 function randrgb() {
-    for (let i = 0; i < 3; i++) {
-        rgb.push(getRandomInteger(0, 255))
-    }
+    console.log('rgb(', getRandomInteger(0, 255), ',', getRandomInteger(0, 255), ',', getRandomInteger(0, 255), ')')
 }
 randrgb();
-console.log(rgb)
 
 // 8).
 
