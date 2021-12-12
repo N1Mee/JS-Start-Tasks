@@ -6,11 +6,11 @@
 // alert( `number ${i}!` );
 // }
 
-let i = 0;
-while (i < 3) {
-alert( `number ${i}!` );
- i++;
-}
+// let i = 0;
+// while (i < 3) {
+// alert( `number ${i}!` );
+//  i++;
+// }
 
 // 2).
 
@@ -23,9 +23,9 @@ alert( `number ${i}!` );
 // gender = 'woman'
 // }
 
-let male = true;
-let gender = male ? 'man' : 'woman';
-console.log(gender);
+// let male = true;
+// let gender = male ? 'man' : 'woman';
+// console.log(gender);
 
 // // 3).
 
@@ -37,13 +37,13 @@ console.log(gender);
 // должно получиться
 // [{ gender: 'man' }, { gender: 'woman' }]
 
-let tf = [true, true, false, true, false];
-let genderray = [];
-for(let item of tf){
-    let gender = (item) ? 'man' : 'woman';
-    genderray.push({gender})
-}
-console.log(genderray)
+// let tf = [true, true, false, true, false];
+// let genderray = [];
+// for(let item of tf){
+//     let gender = (item) ? 'man' : 'woman';
+//     genderray.push({gender})
+// }
+// console.log(genderray)
 
 // 4).
 
@@ -56,74 +56,76 @@ console.log(genderray)
 
 // 1)
 
-function findPositiveNumbers() {
-    let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
-    for (let item of arr) {
-        if (item > 0) {
-            console.log(item)
-        }
-    }
-}
-findPositiveNumbers()
+// function findPositiveNumbers() {
+//     let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
+//     for (let item of arr) {
+//         if (item > 0) {
+//             console.log(item)
+//         }
+//     }
+// }
+// findPositiveNumbers()
 
 // 2)
 
 
-function findPositiveNumbers() {
-    let newarr = [];
-    let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0];
-    for (let item of arr) {
-        if (item > 0) {
-            newarr.push (item)
-        }
-    }
-    console.log(newarr)
-}
-findPositiveNumbers()
+// function findPositiveNumbers() {
+//     let newarr = [];
+//     let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0];
+//     for (let item of arr) {
+//         if (item > 0) {
+//             newarr.push (item)
+//         }
+//     }
+//     console.log(newarr)
+// }
+// findPositiveNumbers()
 
 
 // 3)
 
-let newarr = []
-function findPositiveNumbers() {
-    let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
-    for (let item of arr) {
-        if (item > 0) {
-            newarr.push (item)
-        }
-    }
-    return newarr;
-}
-findPositiveNumbers()
+// function findPositiveNumbers() {
+//     let newarr = []
+//     let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
+//     for (let item of arr) {
+//         if (item > 0) {
+//             newarr.push (item)
+//         }
+//     }
+//     return newarr;
+// }
+// findPositiveNumbers()
+
 
 // 4)
 
-let newarr = []
-let nums = [1, 2, 3, -5, -8, 0]
-function findPositiveNumbers(arr) {
-    for (let item of arr) {
-        if (item > 0) {
-            newarr.push (item)
-        }
-    }
-    return newarr;
-}
-findPositiveNumbers(nums)
+
+// let nums = [1, 2, 3, -5, -8, 0]
+// function findPositiveNumbers(arr) {
+//     let newarr = []
+//     for (let item of arr) {
+//         if (item > 0) {
+//             newarr.push (item)
+//         }
+//     }
+//     return newarr;
+// }
+// findPositiveNumbers(nums)
 
 // 5)
 
 // Напишите функцию, которая принимает два параметра: значение и количество элементов. Функция создает новый массив и заполняет его этим значением в указанном количестве.
 // Например: из переданных значений ('a', 3) получаем массив ['a', 'a', 'a']
 
-function funct (word, num) {
-    let newarr = [];
-    for (let i = 0; i < num; i++) {
-        newarr.push(word)
-    }
-    return newarr;
-}
-console.log(funct('hi', 5));
-console.log(funct('hello', 7));
+// function funct (word, num) {
+//     let newarr = [];
+//     for (let i = 0; i < num; i++) {
+//         newarr.push(word)
+//     }
+//     return newarr;
+// }
+// console.log(funct('hi', 5));
+// console.log(funct('hello', 7));
 
 // 6)
 
@@ -133,17 +135,17 @@ console.log(funct('hello', 7));
 // а запуск функции filterFor(arr, 10) дает результат []
 // а запуск функции filterFor(arr, 3.11) дает результат [4,5,8]
 
-let arr = [5, 4, 3, 8, 0];
-function filterFor(arr, a) {
-    let newarr = [];
-    for (let item of arr) {
-        if (item >= a) {
-            newarr.push(item)
-        }
-    }
-    console.log(newarr)
-}
-filterFor(arr, 4)
+// let arr = [5, 4, 3, 8, 0];
+// function filterFor(arr, a) {
+//     let newarr = [];
+//     for (let item of arr) {
+//         if (item >= a) {
+//             newarr.push(item)
+//         }
+//     }
+//     console.log(newarr)
+// }
+// filterFor(arr, 4)
 
 // 7).
 
@@ -156,43 +158,43 @@ filterFor(arr, 4)
 // Каждый цвет - 3 числа, каждое число лежит в диапазоне от 0 до 255. 
 // Одна функция может вызывать другую функцию
 
-function getRandomInteger(min, max) {
-return Math.floor(Math.random() * (max - min)) + min;
-}
-function randrgb() {
-    console.log('rgb(', getRandomInteger(0, 255), ',', getRandomInteger(0, 255), ',', getRandomInteger(0, 255), ')')
-}
-randrgb();
+// function getRandomInteger(min, max) {
+// return Math.floor(Math.random() * (max - min)) + min;
+// }
+// function randrgb() {
+//     console.log(`rgb( ${getRandomInteger(0, 255)} , ${getRandomInteger(0, 255)} , ${getRandomInteger(0, 255)} )`)
+// }
+// randrgb();
 
 // 8).
 
 // Написать функцию pow(x, n), которая возвращает x в степени n. Иначе говоря, умножает x на себя n раз и возвращает результат (!!! решить без оператора **)
 
-let i = 1;
-function pow(x, n) {
-    let xn = x
-    while (i < n) {
-        xn = xn*x;
-        i++
-    }
-    console.log(xn)    
-}
-pow(2, 3);
+// let i = 1;
+// function pow(x, n) {
+//     let xn = x
+//     while (i < n) {
+//         xn = xn*x;
+//         i++
+//     }
+//     console.log(xn)    
+// }
+// pow(2, 3);
 
 // 9).
 
 // Написать функцию isInteger(x), которая определяет, является ли число целым, и возвращает true либо false.
 
-function isInteger(x) {
-    if (x % 1 === 0) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-let bool = isInteger(3.5)
-console.log(bool)
+// function isInteger(x) {
+//     if (x % 1 === 0) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+// let bool = isInteger(3.5)
+// console.log(bool)
 
 // 10).
 
@@ -204,14 +206,14 @@ console.log(bool)
 // "2 integer"
 // "2.5 decimal"
 
-function funct(n) {
-    for (let i = 1; i < n; i += 0.5) {
-        if (i % 1 === 0) {
-            console.log(i + ' integer')
-        }
-        else {
-            console.log(i + " decimal")
-        }
-    }
-}
-funct(5)
+// function funct(n) {
+//     for (let i = 1; i < n; i += 0.5) {
+//         if (i % 1 === 0) {
+//             console.log(i + ' integer')
+//         }
+//         else {
+//             console.log(i + " decimal")
+//         }
+//     }
+// }
+// funct(5)
