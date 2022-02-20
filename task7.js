@@ -71,21 +71,9 @@ let input1 = document.querySelector('input.first')
 let input2 = document.querySelector('input.second')
 let select = document.querySelector('select')
 let div = document.querySelector('div')
-let result
 addEventListener('submit', (event) => {
     event.preventDefault();
-    if ( select.value === '+'){
-                div.innerText = eval(+input1.value + +input2.value)
-            }
-            else if ( select.value === '-'){
-                div.innerText = eval(+input1.value - +input2.value)
-            }
-            else if ( select.value === '*'){
-                div.innerText = eval(+input1.value * +input2.value)
-            }
-            else if ( select.value === '/'){
-                div.innerText = eval(+input1.value / +input2.value)
-            }
+    div.innerText = eval(`${+input1.value} ${select.value} ${+input2.value}`)
 })
 
 // 5).
